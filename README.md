@@ -29,6 +29,10 @@ DEVICESCAN -a -o on -S on -n standby,q -s (S/../.././02|L/../../6/03) -W 4,35,40
 ```
 schedules a short test every day at 2AM and a long test every weekend at 3AM
 
+```shell
+sudo systemctl restart smartd
+```
+
 ## MOTD status reporting
 Copy the motd scripts into `/etc/update-motd.d`
 These basically scrape journal for smartd notifications
